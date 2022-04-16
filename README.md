@@ -49,7 +49,7 @@ ReadFirst is the best site for readers and book recommendations. Our mission is 
 ### Validation
 - __HTML__
     - (add html validation result and image)
--__CSS__
+- __CSS__
     - (add css validation result and image)
 
 ### Unfixed Bugs

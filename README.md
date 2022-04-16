@@ -52,11 +52,11 @@ ReadFirst is the best site for readers and book recommendations. Our mission is 
 - __CSS__
     - (add css validation result and image)
 
-### Unfixed Bugs
+## Unfixed Bugs
 (add any unfixed bugs if exist)
 
-### Deployment
-### Credits
-## Contents
-## Media
+## Deployment
+## Credits
+### Contents
+### Media
 ###

@@ -343,7 +343,7 @@ aside .genre h3{
 }
 
 .all-books .book-item .book-img {
-    min-width: 300px;
+    min-width: 30%;
     height: 214px;
     margin-right: 20px;
     width: 100%;
@@ -358,6 +358,7 @@ aside .genre h3{
 }
 .all-books .book-item .book-info {
     position: relative;
+    overflow: hidden;
 }
 .all-books .book-item .book-info .book-meta {
     font-size: 0.9em;
@@ -516,7 +517,7 @@ textarea{
     }
     
     .all-books .book-item .book-img {
-        min-width: 150px;
+        min-width: 25%;
     }
 
 }

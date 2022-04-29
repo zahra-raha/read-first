@@ -109,6 +109,7 @@ hr{
  /* hero image */
 #hero{
     height: 450px;
+    position: relative;
     background-color: #4a94fc;
 }
 #cover-text {

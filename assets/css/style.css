@@ -536,6 +536,10 @@ textarea{
     }
     .genre {
         width: 100%;
+        height: auto;
+    }
+    .genre img {
+        height: auto;
     }
     .all-books .book-item {
         display: block;

@@ -514,6 +514,10 @@ textarea{
     #books.new-page{
         margin: 80px 0;
     }
+    
+    .all-books .book-item .book-img {
+        min-width: 150px;
+    }
 
 }
 

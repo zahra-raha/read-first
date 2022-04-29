@@ -1,10 +1,8 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
-
 # ReadFirst
 
 ReadFirst is the best site for readers and book lovers. Our mission is to help people find and share books they love. ReadFirst launched in April 2022.
 
-![Responsice Mockup](https://github.com/lucyrush/readme-template/blob/master/media/love_running_mockup.png)
+![Responsice Mockup](https://github.com/zahra-raha/read-first/blob/main/assets/img/img-readme/mokeup.PNG)
 
 ## Features 
 
@@ -83,7 +81,7 @@ ReadFirst is the best site for readers and book lovers. Our mission is to help p
     - CSS
         - No errors or warnings were found when passing through the validation by [W3C validator](https://validator.w3.org/)
 ## Unfixed Bugs
-(add any unfixed bugs if exist)
+    - Hero image in home page is not fully responsive.
 
 ## Deployment
 

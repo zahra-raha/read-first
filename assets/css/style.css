@@ -178,7 +178,7 @@ hr{
 }
 .genre{
     width: 27%;
-    height: 100%;
+    height: auto;
     float: left;
     margin: 3% ;
     text-align: center;
@@ -471,7 +471,7 @@ textarea{
 
     #hero{
         text-align: center;
-        height: 460px;
+        height: auto;
     }
     #cover-text {
         padding-top: 20%;

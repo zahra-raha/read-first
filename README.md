@@ -12,65 +12,59 @@ ReadFirst is the best site for readers and book lovers. Our mission is to help p
 
 - __Navigation Bar__
 
-    - Contains logo image and navigation menu (logo image has link to home page)
-    - Fullyfunctional, responsive and standard menu
-    - By using this section users are able to navigate through the website
-    - This section include links to (add navigation links please)
+    - Is fullyfunctional, responsive menu that featured in all pages and have links to logo( home page), Home, Book genres and Contact
+    - This section will allow the user to easily navigate throigh the website across all devices.
 
     (add image of navigation bar)
 
 - __Landing Page Section__
 
-    - Has a backrground color that mach the logo.
-    - Contains Image and a brief motivational statement.
-    - Both Image and statement has animation.
+    - Contains a brief motivational statement encourage the users to read book
+    - Both Image and statement has eye catching animation to catch the user attention
     (add image of landing page)
 
 - __Books Genre Section__
 
-    - Contains a header, paragragh, three sample book genres and a button to all genres page
-    - Three sample book genres are shown as images and a title on them
-    - Book genres have hover design feature
-    - User can go to the recommendation page by selecting a book genre 
+    - This section will allow the users to review the book featured genres and select the genre they like to read.
+    - By selecting a genre in this section user will be navigated to a page containing recommended books for user to download and read.
+    - This section also contain a button to all book genres for users who cannot find his/her favorite genre.
 
     (add image of landing page)
 
 - __Greates Books Section__
 
-    - Contains a header and three sample book introductions
-    - books are introduces by: an image, title, author, language and a brief description about book also contain a download button that downloads the book.
+    - This section is a slide show of three great books for users to easily review, download and read.
+    - Each slide interoduces a book with an image, it's title, author, language a briaf description about the book and a download button that will allow users easily decide which book to download and read next.
 
     (add image of landing page)
 
 - __All Books Genres Page__
 
-    - Contains Books genre section just like home page
-    - Contains more book genres
+    - This section will allow the user to review all book genres included to the website.
+    - This section also allow the users to review the books in a genre by selcting thier favorite genre.
+    - **Note:** The books recommended by this page are not dynamic. It's Just a sample.
 
     (add image of landing page)
 
 - __Book Recommendation Page__
 
-    - Contains a section of book recommendation and a sidebar
-    - Three books are recommended as sample
-    - Book recommendations have the Greatest books section features
-    - Sidebar contains sample book genres and a link to all genres page 
+    - This section contain three book information (image, author, language and brif description) that allow users to decide and download the book they want to read next.
+    - also contain a sidebar that will allow the users to easily select another book genre to read.
 
     (add image of landing page)
 
     - __Contact Page__
 
-    - Contains a form thet users can use it to send messages
-    - Contains other contact information 
+    - Contains a form thet will allow the users to send thier mesages to website owner.
+    - also contains other contact information that user can use to contact the website owner.
 
     (add image of landing page)
 
 - __Footer__
-    - Contains social media links website logo, about us and contact as sections
+    - Contains social media links website logo, a brief description about the website and contact information as sections
     - Is responsive and available in all pages
-    - Contact informations are links that user can use them
-    - Social media links in this section will open a new tab in the browser so that user can quickly get back to the website.
-    - (add any other feature it has)
+    - Contact informations are featured as links that will allow users to easily use them just by clicking.
+    - Social media links in this section will open a new tab in the browser so that allow the user to quickly get back to the website.
     (add image)
 
 ### Future Features 
@@ -82,17 +76,26 @@ ReadFirst is the best site for readers and book lovers. Our mission is to help p
     - Users should have the ability to upload any book they find it usefull
 
 ## Testing
-    (add any testing you performed like responsiveness testing)
-### Validation
-- __HTML__
-    - (add html validation result and image)
-- __CSS__
-    - (add css validation result and image)
 
+- __Validation Tecting__
+    - HTML
+        - No errors or warnings were returned in all pages validation by  [W3C validator](https://validator.w3.org)
+    - CSS
+        - No errors or warnings were found when passing through the validation by [W3C validator](https://validator.w3.org/)
 ## Unfixed Bugs
 (add any unfixed bugs if exist)
 
 ## Deployment
+This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub) 
+
+- The site was deployed to GitHub pages. The steps to deploy are as follows: 
+  - In the GitHub repository, navigate to the Settings tab 
+  - From the source section drop-down menu, select the Master Branch
+  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
+
+The live link can be found here - https://code-institute-org.github.io/love-running-2.0/index.html 
+
+
 ## Credits
 ### Contents
 ### Media

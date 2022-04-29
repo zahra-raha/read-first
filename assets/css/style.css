@@ -1,0 +1,570 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+    color: #3a3a3a;
+}
+/* headings and logo */
+header{
+    background-color: #fff;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    border-bottom: 1px solid #4a94fc;
+    border-top: 1px solid #4a94fc;
+}
+h1, h2 {
+    font-family: Oswald, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #252525;
+}
+hr{
+    width: 100%;
+}
+.btn{
+    text-decoration: none;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 700;
+    background-color: #4a94fc;
+    padding: 6px 30px ;
+    border-radius: 20px;
+    border: 1px solid #4a94fc;
+    display: inline-block;
+    margin: 20px;
+}
+.btn:hover{
+    color:  #4a94fc;
+    background-color: #ffffff;
+    border-style: dashed;
+}
+
+#logo {
+    float: left;
+    font-size: 280%;
+    margin-left: 30px;
+}
+
+/* navigation links */
+#phone-menu-list{
+    display: none;
+}
+#menu-list{
+    display: block;
+}
+.menu {
+    font-size: 110%;
+    letter-spacing: 4px;
+    margin-right: 30px;
+}
+
+.menu, #logo {
+    line-height: 75px;
+}
+
+.menu li {
+    position: relative;
+    float: right;
+    list-style-type: none;
+    margin-right: 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu a:hover, .active{
+    font-weight: 700;
+}
+.icon{
+    display: none;
+}
+
+.active::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 130%;
+    height: 100%;
+    background-image: url('../img/hover.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+}
+ /* hero image */
+#hero{
+    height: 450px;
+    background-color: #4a94fc;
+}
+#cover-text {
+    font-size: 130%;
+    font-family: Oswald, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+    width: 300px;
+    height: 250px;
+    padding-top: 40px;
+    padding-left: 10px;
+    top: 20%;
+    left: 15%;
+    position: absolute;
+    animation-name: fadedown;
+    animation-duration: 1s;
+    animation-delay: .5s;
+}
+
+#cover-text h3{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgba(74, 148, 252,.5);
+}
+.hero-book{
+    width: 550px;
+    height: 388px;
+    top:25%;
+    right:15%;
+    position: absolute;
+    border-radius: 20px;
+    animation-name: fadeup;
+    animation-delay: .5s;
+    animation-duration: 1s;
+}
+/* animation start  */
+@keyframes fadeup{
+    from{
+        top: 35%;
+    }
+    to{
+        top: 25%;
+    }
+}
+@keyframes fadedown{
+    from{
+        top: 10%;
+    }
+    to{
+        top: 20%;
+    }
+}
+/* animation end  */
+
+/* books sugestion section  */
+#books{
+    margin: 100px 0 25px;
+    text-align: center;
+}
+#books h1, .books-slideshow h1{
+    padding: 20px;
+}
+#book-genres{
+    margin: auto 10%;
+    display: inline-block;
+}
+.genre{
+    width: 27%;
+    height: 100%;
+    float: left;
+    margin: 3% ;
+    text-align: center;
+    box-sizing: border-box;
+}
+#books .genre:hover{
+    -webkit-transform: scale(1.1) !important;
+    transform: scale(1.1) !important;
+}
+.genre a{
+    text-decoration: none;
+}
+.genre img{
+    max-width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+    filter: opacity(.7);
+}
+.genre img:hover{
+    box-shadow: 0px 0px 20px rgb(219 219 219 / 56%);
+}
+.genre h3{
+    font-size: 150%;
+    position: relative;
+    top: 3em;
+    color: #252525;
+    z-index: 1;
+    font-weight: bold;
+    text-shadow: 0 1px #4a94fc;
+
+}
+/* sideshow section  */
+
+.books-slideshow{
+    display: inline-block;
+    text-align: center;
+    width: 90%;
+    padding: 25px 5%;
+    /* background-image: url('../img/Slide2_bg.jpg'); */
+}
+.slideshow .book-item{
+    animation: fadeIn 3s ease infinite;
+    background-color: #fff;
+}
+/* animation start */
+@keyframes fadeIn {
+    0% {opacity: 0.0}
+    20% {opacity: 1.0}
+    80% {opacity: 1.0}
+    100% {opacity: 0.0}
+    /* from{
+        margin-left: -10em;
+        margin-right: 10em;
+    }
+    to{
+        margin-left: 0;
+        margin-right: 0;
+    } */
+}
+/* animation end  */
+/* footer section */
+footer{
+    background-color: #8fffff;
+    text-align: center;
+}
+.footer-container{
+    width: 100%;
+    height: 100%;
+    clear: both;
+}
+footer .footer-partition{
+    width: 33%;
+    /* height: 100%; */
+    float: left;
+    margin: 3% ;
+    text-align: left;
+}
+footer #footer-logo{
+    width: 15%;
+    text-align: right;
+}
+.footer-partition h3{
+    padding-bottom: 20px;
+}
+footer .copyright-container{
+    border-top: 1px solid #4a94fc;
+    padding: 20px 20px 30px ;
+    width: 80%;
+    margin: auto;
+}
+footer .copyright{
+    width: 50%;
+    float: right;
+    text-align: right;
+}
+footer .social-media{
+    float: left;
+    width: 50%;
+    text-align: left;
+}
+
+
+.social > li {
+    display: inline;
+    padding: 1%;
+}
+
+.social i {
+    font-size: 150%;
+    color: #4a94fc;
+}
+
+/* recommendation page style  */
+.container{
+    display: inline-block;
+    text-align: center;
+    width: 90%;
+    margin: 100px 5% 0;
+}
+.col-2{
+    width: 67%;
+    float: left;
+    padding: 20px 0;
+    text-align: left;
+}
+.col-1{
+    width: 33%;
+    float: right;
+    padding: 20px 0;
+}
+aside .genre{
+    width: 90%;
+    height: 100%;
+    float: left;
+    margin: 3% ;
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+}
+aside .genre h3{
+    color: #8fffff;
+    z-index: 1;
+    -webkit-transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-color: rgba(0,0,0,.5);
+    padding: 10px;
+    border-radius: 20px;
+}
+.all-books .book-item {
+    position: relative;
+    display: flex;
+    margin-bottom: 50px;
+    box-shadow: 0px 0px 20px rgb(219 219 219 / 56%);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.all-books .book-item .book-img {
+    min-width: 300px;
+    height: 214px;
+    margin-right: 20px;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.all-books .book-item .book-img img {
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+}
+.all-books .book-item .book-info {
+    position: relative;
+}
+.all-books .book-item .book-info .book-meta {
+    font-size: 0.9em;
+    padding: 10px 0px;
+    color: gray;
+}
+.all-books .book-item .book-info .book-meta span {
+    margin-right: 20px;
+    white-space: nowrap;
+}
+
+
+/* contact page styles  */
+.contact-container{
+    margin-bottom: 50px;
+    box-shadow: 0px 0px 20px rgb(219 219 219 / 56%);
+    padding: 20px;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+.title{
+    padding-bottom: 20px;
+}
+form{
+    text-align: left;
+}
+label{
+    font-size: larger;
+}
+.form-input{
+    width: 100%;
+    /* width: -webkit-fill-available; */
+    height: 30px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 0 10px;
+    margin: 10px 0 20px;
+    box-sizing: border-box;
+}
+textarea{
+    width: 100%;
+    /* width: -webkit-fill-available; */
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 20px;
+    box-sizing: border-box;
+}
+.contacts{
+    margin: 0 20px;
+}
+
+/* responsive design for tablet landscape  */
+@media all and (max-width: 1024px) {
+    #hero{
+        text-align: center;
+    }
+    #cover-text {
+        padding-top: 25%;
+        margin: auto;
+        position: relative;
+        top: auto;
+        left: auto;
+        animation-name: fadedown1;
+
+    }
+    @keyframes fadedown1{
+        from{
+            padding-top: 10%;
+        }
+        to{
+            padding-top: 25%;
+        }
+    }
+ }
+
+/* responsive design for tablet  */
+@media all and (max-width: 768px) { 
+    .icon{
+        display: block;
+    }
+    #phone-menu-list{
+        display: block;
+    }
+    #menu-list{
+        display: none;
+    }
+    .menu li {display: none;}
+    .menu a.icon {
+        float: right;
+        display: block;
+    }
+    .menu.phone-menu {
+        float: right;
+        padding-top: 45px;
+        position: relative;
+    }
+    .menu.phone-menu .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .menu.phone-menu li {
+        float: none;
+        display: block;
+        text-align: right;
+    }
+    .active::after {
+        left: 60%;
+    }
+
+    #hero{
+        text-align: center;
+        height: 460px;
+    }
+    #cover-text {
+        padding-top: 20%;
+        margin: auto;
+        position: relative;
+        top: auto;
+        left: auto;
+        animation-name: fadedown1;
+
+    }
+    @keyframes fadedown1{
+        from{
+            padding-top: 10%;
+        }
+        to{
+            padding-top: 20%;
+        }
+    }
+    .hero-book{
+        width: 100%;
+        height: 388px;
+        padding-top:80px;
+        top: 0;
+        left: 0;
+        right: 0;
+        animation-name: fadeup1;
+    }
+    /* animation start  */
+    @keyframes fadeup1{
+        from{
+            padding-top: 110px;
+        }
+        to{
+            padding-top: 80px;
+        }
+    }
+    #books {
+        margin: 25px 0;
+    }
+    #books.new-page{
+        margin: 80px 0;
+    }
+
+}
+
+/* responsive design for phone  */
+@media all and (max-width: 480px) {
+    
+    .hero-book{
+        height: 300px;
+    }
+    #cover-text {
+        padding-top: 25%;
+    }
+    @keyframes fadedown1{
+        from{
+            padding-top: 10%;
+        }
+        to{
+            padding-top: 25%;
+        }
+    }
+    .genre {
+        width: 100%;
+    }
+    .all-books .book-item {
+        display: block;
+    }
+    .all-books .book-item .book-img, .all-books .book-item .book-info{
+        width: 100%;
+    }
+    footer #footer-logo {
+        width: 100%;
+        text-align: center;
+    }
+    footer .footer-partition {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+    .footer-partition table{
+        text-align: center;
+        margin: auto;
+    }
+    .copyright-container > div{
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+    .contact-container{
+        margin-bottom: auto;
+    }
+    .col-1, .col-2{
+        width: 100%;
+    }
+ }

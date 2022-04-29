@@ -86,17 +86,27 @@ ReadFirst is the best site for readers and book lovers. Our mission is to help p
 (add any unfixed bugs if exist)
 
 ## Deployment
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub) 
 
 - The site was deployed to GitHub pages. The steps to deploy are as follows: 
+  - Login to GitHub
   - In the GitHub repository, navigate to the Settings tab 
-  - From the source section drop-down menu, select the Master Branch
-  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
+  - In Settings, navigate to pages
+  - From the source section of GitHub Pages drop-down menu, select the main Branch
+  - Once the main branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
 
-The live link can be found here - https://code-institute-org.github.io/love-running-2.0/index.html 
+The live link can be found here - https://zahra-raha.github.io/read-first/
 
 
 ## Credits
 ### Contents
+- The site salogan and mativational statement are taken from - https://sloganshub.org/slogan-about-reading/
+- Book informations are taken from - https://thegreatestbooks.org/
+- The icons in the footer are taken from - https://fontawesome.com/
+
 ### Media
-###
+- All images used except favicon and logos are taken from - https://unsplash.com/
+- Favicon and logos are taken from - https://www.brandcrowd.com/
+
+### Other
+- Instructions on how to implement slideshow is taken from - https://www.w3schools.com/
+- Instructions on how design resbonsive navigation is taken from - https://stackoverflow.com/

@@ -1,8 +1,8 @@
 # ReadFirst
 
-ReadFirst is the best site for readers and book lovers. Our mission is to help people find and share books they love. ReadFirst launched in April 2022.
+ReadFirst is the best site for readers and book lovers. Our mission is to help people find and share books they love. ReadFirst launched in April 2022 and updated in June 2022.
 
-![Responsice Mockup](https://github.com/zahra-raha/read-first/blob/main/assets/img/img-readme/mokeup.PNG)
+![Responsive Mockup](https://github.com/zahra-raha/read-first/blob/main/assets/img/img-readme/mokeup.PNG)
 
 ## Features 
 
@@ -52,6 +52,17 @@ ReadFirst is the best site for readers and book lovers. Our mission is to help p
     - also contain a sidebar that will allow the users to easily select another book genre to read.
 
     ![Book Recommendation Page](https://github.com/zahra-raha/read-first/blob/main/assets/img/img-readme/booksp.jpeg)
+
+    - __Quiz Page__
+
+    - Contains three level quiz (Easy, Medium and Hard).
+    - Every quiz contain 10 questions.
+    - After answering all 10 questions the website will calculate and show the score of user.
+    - If the user take more than 7 score the website shows Congratulation message with animation.
+    - User can take the quiz unlimited. 
+
+    ![Quiz Page Image](https://github.com/zahra-raha/read-first/blob/main/assets/img/img-readme/quiz.jpeg)
+
 
     - __Contact Page__
 
@@ -103,6 +114,7 @@ The live link can be found here - https://zahra-raha.github.io/read-first/
 - The site salogan and mativational statement are taken from - https://sloganshub.org/slogan-about-reading/
 - Book informations are taken from - https://thegreatestbooks.org/
 - The icons in the footer are taken from - https://fontawesome.com/
+- The quiz questions are from - https://triviaquiznight.com/books-quiz-questions-and-answers/ and - https://www.ultimatequizquestions.com/book-trivia-questions/
 
 ### Media
 - All images used except favicon and logos are taken from - https://unsplash.com/
@@ -112,3 +124,4 @@ The live link can be found here - https://zahra-raha.github.io/read-first/
 - Fonts used are based on the Code Institute love running walkthrough project
 - Instructions on how to implement slideshow is taken from - https://www.w3schools.com/
 - Instructions on how design resbonsive navigation is taken from - https://stackoverflow.com/
+- Animation on quiz page is taken from - https://alvarotrigo.com/blog/animated-backgrounds-css/

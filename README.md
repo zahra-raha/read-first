@@ -10,7 +10,7 @@ ReadFirst is the best site for readers and book lovers. Our mission is to help p
 
 - __Navigation Bar__
 
-    - Is fullyfunctional, responsive menu that featured in all pages and have links to logo( home page), Home, Book genres and Contact
+    - Is fullyfunctional, responsive menu that featured in all pages and have links to logo( home page), Home, Book genres, Quiz and Contact
     - This section will allow the user to easily navigate throigh the website across all devices.
 
     ![Header Image](https://github.com/zahra-raha/read-first/blob/main/assets/img/img-readme/nav.PNG)
@@ -56,12 +56,14 @@ ReadFirst is the best site for readers and book lovers. Our mission is to help p
     - __Quiz Page__
 
     - Contains three level quiz (Easy, Medium and Hard).
-    - Every quiz contain 10 questions.
+    - Every quiz contain 10 questions. Next question will take place of previous quistion.
     - After answering all 10 questions the website will calculate and show the score of user.
     - If the user take more than 7 score the website shows Congratulation message with animation.
     - User can take the quiz unlimited. 
 
     ![Quiz Page Image](https://github.com/zahra-raha/read-first/blob/main/assets/img/img-readme/quiz.jpeg)
+    ![Quiz Page Image](https://github.com/zahra-raha/read-first/blob/main/assets/img/img-readme/question.jpeg)
+    ![Quiz Page Image](https://github.com/zahra-raha/read-first/blob/main/assets/img/img-readme/result.jpeg)
 
 
     - __Contact Page__
@@ -90,10 +92,10 @@ ReadFirst is the best site for readers and book lovers. Our mission is to help p
 ## Testing
 
 - __Validation Tecting__
-    - HTML
-        - No errors or warnings were returned in all pages validation by  [W3C validator](https://validator.w3.org)
-    - CSS
-        - No errors or warnings were found when passing through the validation by [W3C validator](https://validator.w3.org/)
+    - HTML and CSS 
+        - No errors or warnings were returned in all pages validation by W3C validator - Can be checked in - [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fzahra-raha.github.io%2Fread-first)
+    - HTML and CSS in Quiz Page
+        - No errors or warnings were found when passing through the validation by W3C validator - Can be checked in - [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fzahra-raha.github.io%2Fread-first%2Fquiz.html)
 ## Unfixed Bugs
     - Hero image in home page is not fully responsive.
 

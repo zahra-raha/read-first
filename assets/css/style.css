@@ -221,7 +221,6 @@ hr{
     text-align: center;
     width: 90%;
     padding: 25px 5%;
-    /* background-image: url('../img/Slide2_bg.jpg'); */
 }
 .slideshow .book-item{
     animation: fadeIn 3s ease infinite;
@@ -233,14 +232,6 @@ hr{
     20% {opacity: 1.0}
     80% {opacity: 1.0}
     100% {opacity: 0.0}
-    /* from{
-        margin-left: -10em;
-        margin-right: 10em;
-    }
-    to{
-        margin-left: 0;
-        margin-right: 0;
-    } */
 }
 /* animation end  */
 /* footer section */
@@ -255,7 +246,6 @@ footer{
 }
 footer .footer-partition{
     width: 33%;
-    /* height: 100%; */
     float: left;
     margin: 3% ;
     text-align: left;
@@ -433,7 +423,6 @@ label{
 }
 .form-input{
     width: 100%;
-    /* width: -webkit-fill-available; */
     height: 30px;
     border: 1px solid #e0e0e0;
     border-radius: 5px;
@@ -443,7 +432,6 @@ label{
 }
 textarea{
     width: 100%;
-    /* width: -webkit-fill-available; */
     border: 1px solid #e0e0e0;
     border-radius: 5px;
     padding: 10px;

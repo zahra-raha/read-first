@@ -294,7 +294,13 @@ footer .social-media{
     font-size: 150%;
     color: #4a94fc;
 }
-
+/* quiz page style  */
+.question-area{
+    width: 67%;
+    padding: 20px 0;
+    text-align: center;
+    margin: auto;
+}
 /* recommendation page style  */
 .container{
     display: inline-block;

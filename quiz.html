@@ -11,6 +11,7 @@
     </title>
     <link rel="shortcut icon" href="favicon.png">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animation.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -38,6 +39,11 @@
     </header>
    
     <section id="books" class="new-page">
+        
+        <div id="pyro">
+            <div class="before"></div>
+            <div class="after"></div>
+        </div>
         <h1>GREAT BOOKS QUIZ QUESTIONS</h1>
         <h4>it’s one for the bibliophiles! Yup, a quiz perfectly curated for people 
             <br> with an innate passion for the written word, in the form of books. Whether you’re a 
@@ -63,7 +69,8 @@
                 </div>
                 <div class="book-item " id="score-div">
                     <div class="book-info">
-                        <h2><span >Score: </span> <span id="score">0</span></h2>
+                        <h2><span id="score">0</span></h2>
+                        <a href="#" class="btn " id="reload">test again</a>
                     </div>
                 </div>
             </div>
@@ -129,6 +136,8 @@
     let question = document.getElementById('question');
     let questionNum = document.getElementById('question-number');
     let choices = document.getElementsByClassName('choice-btn');
+    let reloadBtn = document.getElementById("reload");
+    reloadBtn.addEventListener('click',reload);
     let levels = document.getElementsByClassName('level');
     for (var i=0; i < levels.length; i++) {;
             levels[i].addEventListener('click',selectLevel);
@@ -384,7 +393,18 @@
             answer: 'Never Let Me Go',
         },
     ]
-
+    function reload(event){
+        event.preventDefault();
+        var lDiv = document.getElementById("first");
+        var sDiv = document.getElementById("score-div");
+        sDiv.style.display = 'none';
+        lDiv.style.display = 'flex';
+        var pyro = document.getElementById("pyro");
+        pyro.classList.remove("pyro");
+        let score = document.getElementById('score');
+        score.innerHTML = 0;
+        questionNumber = 0;
+    }
     function selectLevel(event){
         event.preventDefault();
 
@@ -439,6 +459,17 @@
     }
     function showScore(){
         console.log("show score called");
+        let scoreElement = document.getElementById('score');
+        let score = document.getElementById('score').innerText;
+        if(parseInt(score)>= 6){
+            scoreElement.innerHTML = "Congratulations! You got "+ score + " out of 10.";
+            var pyro = document.getElementById("pyro");
+            pyro.classList.add("pyro");
+        }else {
+            scoreElement.innerHTML = "Oops! You got "+ score + " out of 10.";
+
+        }
+        
         var qDiv = document.getElementById("questions");
         var sDiv = document.getElementById("score-div");
         qDiv.style.display = 'none';

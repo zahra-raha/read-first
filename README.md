@@ -53,7 +53,7 @@ ReadFirst is the best site for readers and book lovers. Our mission is to help p
 
     ![Book Recommendation Page](https://github.com/zahra-raha/read-first/blob/main/assets/img/img-readme/booksp.jpeg)
 
-    - __Quiz Page__
+- __Quiz Page__
 
     - Contains three level quiz (Easy, Medium and Hard).
     - Every quiz contain 10 questions. Next question will take place of previous quistion.
@@ -62,11 +62,13 @@ ReadFirst is the best site for readers and book lovers. Our mission is to help p
     - User can take the quiz unlimited. 
 
     ![Quiz Page Image](https://github.com/zahra-raha/read-first/blob/main/assets/img/img-readme/quiz.jpeg)
+    - __Quiz Page Question Part__
     ![Quiz Page Image](https://github.com/zahra-raha/read-first/blob/main/assets/img/img-readme/question.jpeg)
+    - __Quiz Page Showing Result__
     ![Quiz Page Image](https://github.com/zahra-raha/read-first/blob/main/assets/img/img-readme/result.jpeg)
 
 
-    - __Contact Page__
+- __Contact Page__
 
     - Contains a form thet will allow the users to send thier mesages to website owner.
     - also contains other contact information that user can use to contact the website owner.

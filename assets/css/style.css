@@ -301,6 +301,33 @@ footer .social-media{
     text-align: center;
     margin: auto;
 }
+.choice-btn{
+    text-decoration: none;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 700;
+    background-color: #4a94fc;
+    padding: 6px 30px ;
+    border-radius: 20px;
+    border: 1px solid #4a94fc;
+    display: inline-block;
+    margin: 20px;
+}
+#questions{
+    display: flex;
+}
+#score-div{
+    display: none;
+}
+.correct {
+    background-color: green;
+    border: 1px solid green;
+}
+.wrong{
+    
+    background-color: red;
+    border: 1px solid red;
+}
 /* recommendation page style  */
 .container{
     display: inline-block;

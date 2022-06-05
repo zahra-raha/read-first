@@ -43,13 +43,18 @@
             <br> and we’ll give you surprisingly insightful recommendations.</h4>
         <div class="container">
             <div class="all-books question-area">
-                <div class="book-item">
+                <div class="book-item " id="questions">
                     <div class="book-info">
-                        <h3>1. Anastasia Steele first appears in which risqué 2011 novel by E.L. James?</h3>
-                        <p class="btn">A. &nbsp;<span class="choice">Answer 1</span></p>
-                        <p class="btn">B. &nbsp;<span class="choice">Answer 2</span></p>
-                        <p class="btn">C. &nbsp;<span class="choice">Answer 3</span></p>
-                        <p class="btn">D. &nbsp;<span class="choice">Answer 4</span></p>
+                        <h3><span id="question-number"> 1.</span><span id="question"></span> </h3>
+                        <p class="choice-btn">A. &nbsp;<span class="choice">Answer 1</span></p>
+                        <p class="choice-btn">B. &nbsp;<span class="choice">Answer 2</span></p>
+                        <p class="choice-btn">C. &nbsp;<span class="choice">Answer 3</span></p>
+                        <p class="choice-btn">D. &nbsp;<span class="choice">Answer 4</span></p>
+                    </div>
+                </div>
+                <div class="book-item " id="score-div">
+                    <div class="book-info">
+                        <h2><span >Score: </span> <span id="score">0</span></h2>
                     </div>
                 </div>
             </div>
@@ -111,4 +116,142 @@
     </footer>
     <script src="assets/js/index.js"></script>
 </body>
+<script>
+    let question = document.getElementById('question');
+    let questionNum = document.getElementById('question-number');
+    let choices = document.getElementsByClassName('choice');
+    var questionNumber = 0;
+    for (var i=0; i < choices.length; i++) {;
+            choices[i].addEventListener('click',checkAnswer);
+        }
+    let questions = [
+    {
+        question: 'Anastasia Steele first appears in which risqué 2011 novel by E.L. James?',
+        choice1: 'The Summer Court',
+        choice2: 'Fifty Shades of Grey',
+        choice3: 'The Night Court',
+        choice4: 'The Day Court',
+        answer: 'Fifty Shades of Grey',
+    },
+    {
+        question: 'What is the second Harry Potter book called?',
+        choice1: 'The Summer Court',
+        choice2: 'Harry Potter & The Chamber of Secrets',
+        choice3: 'The Night Court',
+        choice4: 'The Day Court',
+        answer: 'Harry Potter & The Chamber of Secrets',
+    },
+    {
+        question: 'In The Hobbit, what sort of creature is Smaug?',
+        choice1: 'The Summer Court',
+        choice2: 'The Spring Court',
+        choice3: 'Dragon',
+        choice4: 'The Day Court',
+        answer: 'Dragon',
+    },
+    {
+        question: 'Which Dickens character says “Please, Sir, I want some more”',
+        choice1: 'Oliver Twist',
+        choice2: 'The Spring Court',
+        choice3: 'The Night Court',
+        choice4: 'The Day Court',
+        answer: 'Oliver Twist',
+    },
+    {
+        question: 'Which author created Tom Sawyer and Huckleberry Finn?',
+        choice1: 'The Summer Court',
+        choice2: 'The Spring Court',
+        choice3: 'Mark Twain',
+        choice4: 'The Day Court',
+        answer: 'Mark Twain',
+    },
+    {
+        question: 'Which Jules Vern character travelled around the world with Passe Partout?',
+        choice1: 'The Summer Court',
+        choice2: 'Phileas Fogg',
+        choice3: 'The Night Court',
+        choice4: 'The Day Court',
+        answer: 'Phileas Fogg',
+    },
+    {
+        question: 'To which kingdom of living things do the Triffids, who take over the Earth in a famous John Wyndham novel, belong?',
+        choice1: 'The Summer Court',
+        choice2: 'The Spring Court',
+        choice3: 'The Night Court',
+        choice4: 'Plants',
+        answer: 'Plants',
+    },
+    {
+        question: 'In which 18th century novel does the protagonist eventually marry Mr. Rochester?',
+        choice1: 'The Summer Court',
+        choice2: 'The Spring Court',
+        choice3: 'The Night Court',
+        choice4: 'Jane Eyre',
+        answer: 'Jane Eyre',
+    },
+    {
+        question: 'Which prolific US author wrote It, The Shining and Misery?',
+        choice1: 'Stephen King',
+        choice2: 'The Spring Court',
+        choice3: 'The Night Court',
+        choice4: 'The Day Court',
+        answer: 'Stephen King',
+    },
+    {
+        question: 'Who was Bertie Wooster’s valet in the series of P.G. Wodehouse stories?',
+        choice1: 'The Summer Court',
+        choice2: 'Jeeves',
+        choice3: 'The Night Court',
+        choice4: 'The Day Court',
+        answer: 'Jeeves',
+    },
+    ]
+
+    const runQuiz = () => {
+        let score = 0;
+        loadNewQuestion();
+    };
+    /**
+     * load new question in screen
+     *  */
+    const loadNewQuestion = () => {
+        if( questionNumber > 9) {
+            showScore();
+        }
+        else{
+            console.log("question number: " + questionNumber);
+            question.innerText = questions[questionNumber].question;
+            questionNum.innerText = questionNumber+1 +'. ';
+            
+            for (var i=0; i < choices.length; i++) {;
+                choices[i].innerText = questions[questionNumber]['choice' + (i+1)];
+            }
+        }
+    };
+    function checkAnswer(event){
+
+        let selectedChoice = event.target.innerText;
+        let score = document.getElementById('score');
+        let className = questions[questionNumber].answer === selectedChoice? 'correct': 'wrong';
+        score.innerHTML = questions[questionNumber].answer === selectedChoice? parseInt(score.innerText) + 1: parseInt(score.innerText);
+        event.target.parentElement.classList.add(className);
+        setTimeout(() => {
+            event.target.parentElement.classList.remove(className);           
+            questionNumber++;
+            loadNewQuestion();
+
+        }, 500);
+        
+
+    }
+    function showScore(){
+        console.log("show score called");
+        var qDiv = document.getElementById("questions");
+        var sDiv = document.getElementById("score-div");
+        qDiv.style.display = 'none';
+        sDiv.style.display = 'flex';
+    }
+    document.onload= runQuiz();
+
+</script>
 </html>

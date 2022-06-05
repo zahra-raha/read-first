@@ -295,10 +295,16 @@ footer .social-media{
     color: #4a94fc;
 }
 /* quiz page style  */
+#quiz-container{
+    margin: 10px 5% 0;
+}
 .question-area{
     width: 67%;
     padding: 20px 0;
     text-align: center;
+    margin: auto;
+}
+.question-area .book-info{
     margin: auto;
 }
 .choice-btn{
@@ -313,8 +319,11 @@ footer .social-media{
     display: inline-block;
     margin: 20px;
 }
-#questions{
+#first{
     display: flex;
+}
+#questions{
+    display: none;
 }
 #score-div{
     display: none;

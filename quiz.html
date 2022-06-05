@@ -38,18 +38,27 @@
     </header>
    
     <section id="books" class="new-page">
-        <h1>Deciding what to read next?</h1>
-        <h4>You’re in the right place. Tell us what titles or genres you’ve enjoyed in the past,
-            <br> and we’ll give you surprisingly insightful recommendations.</h4>
-        <div class="container">
+        <h1>GREAT BOOKS QUIZ QUESTIONS</h1>
+        <h4>it’s one for the bibliophiles! Yup, a quiz perfectly curated for people 
+            <br> with an innate passion for the written word, in the form of books. Whether you’re a 
+            <br> Kindle carrier or like a good old fashioned paperback.</h4>
+        <div class="container" id="quiz-container">
             <div class="all-books question-area">
+                <div class="book-item " id="first">
+                    <div class="book-info">
+                        <h3>Do you want to know the level of your book knowledge? choose one option</h3>
+                        <a href="#" class="btn level">Easy</a>
+                        <a href="#" class="btn level">Mediam</span></a>
+                        <a href="#" class="btn level">Hard</a>
+                    </div>
+                </div>
                 <div class="book-item " id="questions">
                     <div class="book-info">
                         <h3><span id="question-number"> 1.</span><span id="question"></span> </h3>
-                        <p class="choice-btn">A. &nbsp;<span class="choice">Answer 1</span></p>
-                        <p class="choice-btn">B. &nbsp;<span class="choice">Answer 2</span></p>
-                        <p class="choice-btn">C. &nbsp;<span class="choice">Answer 3</span></p>
-                        <p class="choice-btn">D. &nbsp;<span class="choice">Answer 4</span></p>
+                        <a href="#"  class="choice-btn"><span class="choice"></span></a>
+                        <a href="#"  class="choice-btn"><span class="choice"></span></a>
+                        <a href="#"  class="choice-btn"><span class="choice"></span></a>
+                        <a href="#"  class="choice-btn"><span class="choice"></span></a>
                     </div>
                 </div>
                 <div class="book-item " id="score-div">
@@ -119,7 +128,11 @@
 <script>
     let question = document.getElementById('question');
     let questionNum = document.getElementById('question-number');
-    let choices = document.getElementsByClassName('choice');
+    let choices = document.getElementsByClassName('choice-btn');
+    let levels = document.getElementsByClassName('level');
+    for (var i=0; i < levels.length; i++) {;
+            levels[i].addEventListener('click',selectLevel);
+        }
     var questionNumber = 0;
     for (var i=0; i < choices.length; i++) {;
             choices[i].addEventListener('click',checkAnswer);
@@ -207,19 +220,27 @@
     },
     ]
 
-    const runQuiz = () => {
+    function selectLevel(event){
+        event.preventDefault();
+
+        var lDiv = document.getElementById("first");
+        var qDiv = document.getElementById("questions");
+        qDiv.style.display = 'flex';
+        lDiv.style.display = 'none';
+        runQuiz();
+    }
+    function runQuiz()  {
         let score = 0;
         loadNewQuestion();
     };
     /**
      * load new question in screen
      *  */
-    const loadNewQuestion = () => {
+    function loadNewQuestion() {
         if( questionNumber > 9) {
             showScore();
         }
         else{
-            console.log("question number: " + questionNumber);
             question.innerText = questions[questionNumber].question;
             questionNum.innerText = questionNumber+1 +'. ';
             
@@ -229,18 +250,19 @@
         }
     };
     function checkAnswer(event){
+        event.preventDefault();
 
-        let selectedChoice = event.target.innerText;
+        let selectedChoice = event.target.innerText; 
         let score = document.getElementById('score');
         let className = questions[questionNumber].answer === selectedChoice? 'correct': 'wrong';
         score.innerHTML = questions[questionNumber].answer === selectedChoice? parseInt(score.innerText) + 1: parseInt(score.innerText);
-        event.target.parentElement.classList.add(className);
+        event.target.classList.add(className);
         setTimeout(() => {
-            event.target.parentElement.classList.remove(className);           
+            event.target.classList.remove(className);           
             questionNumber++;
             loadNewQuestion();
 
-        }, 500);
+        }, 700);
         
 
     }
@@ -251,7 +273,6 @@
         qDiv.style.display = 'none';
         sDiv.style.display = 'flex';
     }
-    document.onload= runQuiz();
 
 </script>
 </html>
